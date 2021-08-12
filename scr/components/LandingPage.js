@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text,View,StyleSheet } from 'react-native';
+import { Text,View,StyleSheet, Button } from 'react-native';
 
 const style = StyleSheet.create({
     main: {
@@ -7,12 +7,26 @@ const style = StyleSheet.create({
     }
 })
 
-const LandingPage = () => {
+
+
+const LandingPage = (props) => {
+    const { navigation } = props;
     return(
         <View style={style.main}>
             <Text>
-                Inside of Landinggg page
+                Landing
             </Text>
+            <Button 
+                onPress={()=> navigation.navigate("WeatherFeed")}
+                title="Weather Feed"
+                accessibilityLabel="learn more about this button"
+            />
+            <Button 
+                onPress={()=> navigation.navigate("ProfilePage")}
+                title="Profile XXX"
+                accessibilityLabel="learn more about this button"
+            />
+
         </View>
     )
 };

@@ -12,7 +12,7 @@ const WeatherFeed = () => {
     <>
         <View style={style.main}>
         <Text>
-            Inside of profile page
+            Inside of Weather page
         </Text>
         </View>
     </>

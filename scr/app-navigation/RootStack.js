@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text} from 'react-native';
-import ProfilePage from '../components/profilePage';
+import ProfilePage from '../components/ProfilePage';
 import WeatherFeed from '../components/WeatherFeed';
 import { createStackNavigator } from '@react-navigation/stack';
 import LandingPage from '../components/LandingPage';
